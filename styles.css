@@ -2,9 +2,30 @@
     background-color: brown;
 } */
 
+button {
+    width: 150px;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, #b2beb5, blue, brown);
+    color: #fff;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.5);
+}
+
+p {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
 .fancy-body {
     background-image: linear-gradient(45deg, blue, brown, #b2beb5);
     text-align: center;
+    
 }
 
 .big-title {
@@ -12,4 +33,10 @@
     color: yellow;
     font-family: cursive;
     padding-top: 10%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 10%;
 }
