@@ -30,3 +30,21 @@ $("input").keypress(function(event) {
 $("p").on("mouseover", function() {
     $("h1").text("😈");
 })
+
+// Adding and removing elements with jquery
+$("h1").before("<button>New me</button>");
+$("h1").after("<button>Old me</button>");
+$("h1").prepend("👋");
+$("h1").append(" champ!");
+
+// Remove elements
+// $("button").remove();
+
+// Animation with jQuery
+$("button").on("click", function() {
+    $("p").fadeToggle(); /*You can also use slide up and slide down*/
+});
+
+$("button").on("click", function() {
+    $("h1").animate({opacity: 0.5}); /*You can chain more than one method*/
+});
